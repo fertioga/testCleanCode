@@ -14,19 +14,19 @@ class Action
             {
                 if($param2[$c]['vlr'] == 0.00)
                 {
-                    $vlr_type = "FREE";
+                    $return['vlr_type'] = "FREE";
                 }
                 elseif($param2[$c]['vlr'] >= 0.01 and $param2[$c]['vlr'] <= 10)
                 {
-                    $vlr_type = "CHEAP";
+                    $return['vlr_type'] = "CHEAP";
                 }
                 elseif($param2[$c]['vlr'] > 10 and $param2[$c]['vlr'] <= 20)
                 {
-                    $vlr_type = "GOOD_VALUE";
+                    $return['vlr_type'] = "GOOD_VALUE";
                 }
                 elseif($param2[$c]['vlr'] > 20)
                 {
-                    $vlr_type = "EXPENSIVE";
+                    $return['vlr_type'] = "EXPENSIVE";
                 }
             }
         }
